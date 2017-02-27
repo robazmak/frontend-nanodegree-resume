@@ -1,3 +1,4 @@
+
 body,
 div,
 ul,
@@ -36,7 +37,7 @@ h2 {
   font-size: 24px;
   color: #999;
   line-height: 29px;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 h3 {
@@ -53,7 +54,7 @@ h4 {
   line-height: 17px;
 }
 
-h2,
+
 h3,
 h4,
 h5 {
@@ -219,3 +220,20 @@ span {
     display: block;
   }
 }
+
+/*MY CSS PERSONAL EDITS*/
+
+#workExperience, #projects, #education{
+
+  padding:0 5%;
+}
+
+.places {
+  margin-left: 5%;
+}
+
+.flex-item {
+  list-style: none;
+  padding-bottom: 5px;
+}
+
