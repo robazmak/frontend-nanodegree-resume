@@ -123,7 +123,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
 
     if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
+      document.getElementById('topContacts').style.display ='none';
     }
     if(document.getElementsByTagName('h1').length === 0) {
       document.getElementById('header').style.display = 'none';
@@ -135,7 +135,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       document.getElementById('projects').style.display = 'none';
     }
     if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
+      document.getElementById('education').style.backgroundColor = 'black';
     }
     if(document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('lets-connect').style.display = 'none';
@@ -143,6 +143,22 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     if(document.getElementById('map') === null) {
       document.getElementById('mapDiv').style.display = 'none';
     }
+    /*if statement that checks wheter therea are any skills in bio object
+    if the if statment === true; then append()HTMLskillsStart to the div with the id header
+    then append() the skills to the element with id skills using HTMLskills to format each skill
+    */
+
+    if (bio.skills.length !== 0) {
+        $("#header").append(HTMLskillsStart);
+        $("#skills").append(formattedSkills0);
+        $("#skills").append(formattedSkills1);
+        $("#skills").append(formattedSkills2);
+        $("#skills").append(formattedSkills3);
+    }
+
+
+
+    
   </script>
 </body>
 </html>
